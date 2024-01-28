@@ -1,0 +1,109 @@
+
+.mk-header h3 {
+  font-size: clamp(19px, 2vw, 28px);
+}
+
+.mk-header .mk-back,
+.mk-share {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 100;
+}
+.mk-remedyimage-title {
+  padding: 10px;
+  background-color: #4444444d;
+  bottom: 0%;
+}
+.mk-remedyimage-title h3 {
+  font-size: 24px;
+}
+
+/* SOCIAL ICON DESIGN  */
+.socialShareWrapper {
+  margin: 50px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 1;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 260%;
+    height: 260%;
+    z-index: -1;
+  }
+  .shareIcon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 50%;
+    background: #e0004f;
+    position: relative;
+    z-index: 1;
+    svg {
+      width: 16px;
+      margin: 7px;
+    }
+  }
+  > i {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 50%;
+    background: #ff0000;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all ease-in-out 0.3s;
+    svg {
+      width: 16px;
+      height: 16px;
+      margin: 7px;
+    }
+  }
+  &:hover {
+    i {
+      opacity: 1;
+      &:nth-of-type(1) {
+        top: 180%;
+        transition-delay: 0.1s;
+        background: #dd2a7b;
+      }
+      &:nth-of-type(2) {
+        top: 122%;
+        left: -60%;
+        transition-delay: 0.2s;
+        background: #1c9deb;
+      }
+      &:nth-of-type(3) {
+        top: -6%;
+        left: -60%;
+        transition-delay: 0.3s;
+        background: #c4302b;
+      }
+      &:nth-of-type(4) {
+        top: -85%;
+        left: 50%;
+        transition-delay: 0.4s;
+        background: #3b5998;
+      }
+      &:nth-of-type(5) {
+        top: -6%;
+        left: 160%;
+        transition-delay: 0.5s;
+        background: #4fce5d;
+      }
+      &:nth-of-type(6) {
+        top: 122%;
+        left: 160%;
+        transition-delay: 0.6s;
+        background: #585858;
+      }
+    }
+  }
+}

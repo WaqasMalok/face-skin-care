@@ -1,0 +1,37 @@
+ 
+.mk-remedy-card{
+    border: 2px solid rgba(240, 240, 240, 0.164);
+    background-color: #f7f6f6;
+    padding: 10px;
+
+}
+.mk-remedy-card-image{
+    max-width: 360px;
+}
+.mk-remedy-card-content{
+    padding-left: 40px;
+}
+@media (max-width:570px){
+    .mk-remedy-card{ 
+        padding: 5px;
+    
+    }
+    .mk-remedy-card-image{
+        max-width: 200px;
+    }
+    .mk-remedy-card-content{
+        padding-left: 10px;
+    }
+}
+
+/* card list avtive class  */
+.mk-remedy-card-list-active{
+    display: block !important; 
+}
+
+
+
+/* mk-active-catagory */
+
+
+

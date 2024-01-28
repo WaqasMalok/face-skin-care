@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skin and Face Care</title>
+
+    <!-- bootstrap style sheet  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- custom style sheet  -->
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/catagory.css" />
+    <!-- FONTAWESOME  -->
+    <script
+      src="https://kit.fontawesome.com/dc80c8265b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- WEBSITE CONTAINER  -->
+    <div class="mk-web-container m-auto overflow-hidden">
+      <div class="mk-header mk-bg-primary-color">
+        <div
+          class="mk-navigation mk-remedy-max-wd m-auto d-flex align-items-center justify-content-between"
+        >
+          <div class="mk-logo">
+            <a class="text-decoration-none" href="#">
+              <h3 class="logo m-0">Skin and Face Care</h3>
+            </a>
+          </div>
+          <div class="mk-icon">
+            <a class="mk-navigation-icon" href="#">
+              <i class="fa-solid fa-globe"></i>
+            </a>
+            <a
+              class="mk-navigation-icon"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+              href="#"
+            >
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- LOGIN MODEL  -->
+      <!-- Button trigger modal -->
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content mk-login-modal">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Password</label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Login
+              </button>
+              <button type="button" class="btn mk-bg-primary-color text-white">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CATAGORY NAMES  -->
+      <div class="mk-bg-primary-color">
+        <div class="mk-catagory-nav d-flex mk-remedy-max-wd m-auto">
+          <div
+            onclick="remedylist()"
+            id="remedy-btn"
+            class="mk-face fw-bold w-100 text-center mk-active-catagory"
+          >
+            REMEDY
+          </div>
+          <div
+            onclick="dietlist()"
+            id="diet-btn"
+            class="mk-skin fw-bold w-100 text-center"
+          >
+            DIET
+          </div>
+          <div
+            onclick="exericselist()"
+            id="exericse-btn"
+            class="mk-skin fw-bold w-100 text-center"
+          >
+            EXERCISE
+          </div>
+        </div>
+      </div>
+      <!-- CATAGORY SECTION  -->
+      <div class="mk-catagory-section mk-remedy-max-wd m-auto">
+        <!-- REMEDY LIST  -->
+        <div id="remedylist1" class="d-none mk-remedy-card-list-active">
+          <div class="mk-remedy-card">
+            <a
+              class="d-flex align-items-center text-decoration-none"
+              href="./remedy.html"
+            >
+              <div class="mk-remedy-card-image">
+                <img
+                  class="w-100"
+                  src="https://images.unsplash.com/photo-1512867957657-38dbae50a35b?q=80&w=1752&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="mk-remedy-card-content">
+                <h3 class="m-0 text-dark fw-bold">Coconut Oil</h3>
+                <p class="m-0 text-dark">overnight</p>
+              </div></a
+            >
+          </div>
+          <div class="mk-remedy-card">
+            <a
+              class="d-flex align-items-center text-decoration-none"
+              href="./remedy.html"
+            >
+              <div class="mk-remedy-card-image">
+                <img
+                  class="w-100"
+                  src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="mk-remedy-card-content">
+                <h3 class="m-0 text-dark fw-bold">Coconut Oil</h3>
+                <p class="m-0 text-dark">overnight</p>
+              </div></a
+            >
+          </div>
+          <div class="mk-remedy-card">
+            <a
+              class="d-flex align-items-center text-decoration-none"
+              href="./remedy.html"
+            >
+              <div class="mk-remedy-card-image">
+                <img
+                  class="w-100"
+                  src="https://images.unsplash.com/photo-1492552181161-62217fc3076d?q=80&w=1794&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="mk-remedy-card-content">
+                <h3 class="m-0 text-dark fw-bold">Coconut Oil</h3>
+                <p class="m-0 text-dark">overnight</p>
+              </div></a
+            >
+          </div>
+          <div class="mk-remedy-card">
+            <a
+              class="d-flex align-items-center text-decoration-none"
+              href="./remedy.html"
+            >
+              <div class="mk-remedy-card-image">
+                <img
+                  class="w-100"
+                  src="https://images.unsplash.com/photo-1512867957657-38dbae50a35b?q=80&w=1752&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="mk-remedy-card-content">
+                <h3 class="m-0 text-dark fw-bold">Coconut Oil</h3>
+                <p class="m-0 text-dark">overnight</p>
+              </div></a
+            >
+          </div>
+          <div class="mk-remedy-card">
+            <a
+              class="d-flex align-items-center text-decoration-none"
+              href="./remedy.html"
+            >
+              <div class="mk-remedy-card-image">
+                <img
+                  class="w-100"
+                  src="https://images.unsplash.com/photo-1512867957657-38dbae50a35b?q=80&w=1752&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="mk-remedy-card-content">
+                <h3 class="m-0 text-dark fw-bold">Coconut Oil</h3>
+                <p class="m-0 text-dark">overnight</p>
+              </div></a
+            >
+          </div>
+        </div>
+        <!-- DIET LIST  -->
+        <div id="dietlist1" class="d-none">
+          <div class="mk-remedy-card">
+            <a
+              class="d-flex align-items-center text-decoration-none"
+              href="./remedy.html"
+            >
+              <div class="mk-remedy-card-image">
+                <img
+                  class="w-100"
+                  src="https://images.unsplash.com/photo-1512867957657-38dbae50a35b?q=80&w=1752&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="mk-remedy-card-content">
+                <h3 class="m-0 text-dark fw-bold">Coconut Oil</h3>
+                <p class="m-0 text-dark">overnight</p>
+              </div></a
+            >
+          </div>
+          <div class="mk-remedy-card">
+            <a
+              class="d-flex align-items-center text-decoration-none"
+              href="./remedy.html"
+            >
+              <div class="mk-remedy-card-image">
+                <img
+                  class="w-100"
+                  src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="mk-remedy-card-content">
+                <h3 class="m-0 text-dark fw-bold">Coconut Oil</h3>
+                <p class="m-0 text-dark">overnight</p>
+              </div></a
+            >
+          </div>
+          <div class="mk-remedy-card">
+            <a
+              class="d-flex align-items-center text-decoration-none"
+              href="./remedy.html"
+            >
+              <div class="mk-remedy-card-image">
+                <img
+                  class="w-100"
+                  src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="mk-remedy-card-content">
+                <h3 class="m-0 text-dark fw-bold">Coconut Oil</h3>
+                <p class="m-0 text-dark">overnight</p>
+              </div></a
+            >
+          </div>
+        </div>
+        <!-- EXERCISE LIST  -->
+        <div id="exerciselist1" class="d-none"> 
+            <div class="mk-remedy-card">
+              <a
+                class="d-flex align-items-center text-decoration-none"
+                href="./remedy.html"
+              >
+                <div class="mk-remedy-card-image">
+                  <img
+                    class="w-100"
+                    src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="mk-remedy-card-content">
+                  <h3 class="m-0 text-dark fw-bold">Coconut Oil</h3>
+                  <p class="m-0 text-dark">overnight</p>
+                </div></a
+              >
+            </div>
+            <div class="mk-remedy-card">
+              <a
+                class="d-flex align-items-center text-decoration-none"
+                href="./remedy.html"
+              >
+                <div class="mk-remedy-card-image">
+                  <img
+                    class="w-100"
+                    src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="mk-remedy-card-content">
+                  <h3 class="m-0 text-dark fw-bold">Coconut Oil</h3>
+                  <p class="m-0 text-dark">overnight</p>
+                </div></a
+              >
+            </div>
+          </div>
+      </div>
+
+      <!-- FOOTER DESIGN  -->
+      <footer id="mk-footer">
+        <div class="mk-container">
+          <!-- Row -->
+          <div class="row">
+            <div class="col-md-12">
+              <!-- footer logo -->
+              <div class="mk-footer-logo text-center">
+                <h3>Skin and Face Care</h3>
+              </div>
+              <!-- /footer logo -->
+              <!-- footer follow -->
+              <ul class="mk-footer-follow">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+                </li>
+              </ul>
+              <!-- /footer follow -->
+              <!-- footer copyright -->
+              <div class="mk-footer-copyright">
+                <p>
+                  Copyright © 2016-2018. All Rights Reserved.
+                  <a href="#" target="_blank">WAQASMALIK</a>
+                </p>
+              </div>
+              <!-- /footer copyright -->
+            </div>
+          </div>
+          <!-- /Row -->
+        </div>
+        <!-- /Container -->
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custome script  -->
+    <script type="text/javascript">
+      var remedybtn = document.querySelector("#remedy-btn");
+      var dietbtn = document.querySelector("#diet-btn");
+      var exericsebtn = document.querySelector("#exericse-btn");
+      var remedylists = document.querySelector("#remedylist1");
+      var dietlists = document.querySelector("#dietlist1");
+      var exerciselist = document.querySelector("#exerciselist1");
+
+      function remedylist() {
+        remedybtn.classList.add("mk-active-catagory"),
+          dietbtn.classList.remove("mk-active-catagory"),
+          exericsebtn.classList.remove("mk-active-catagory"),
+          remedylists.classList.add("mk-remedy-card-list-active"),
+          dietlists.classList.remove("mk-remedy-card-list-active");
+          exerciselist.classList.remove("mk-remedy-card-list-active");
+
+      }
+      function dietlist() {
+        dietbtn.classList.add("mk-active-catagory"),
+          remedybtn.classList.remove("mk-active-catagory"),
+          exericsebtn.classList.remove("mk-active-catagory"),
+          remedylists.classList.remove("mk-remedy-card-list-active"),
+          dietlists.classList.add("mk-remedy-card-list-active"),
+          exerciselist.classList.remove("mk-remedy-card-list-active");
+
+      }
+      function exericselist() {
+        exericsebtn.classList.add("mk-active-catagory"),
+          dietbtn.classList.remove("mk-active-catagory"),
+          remedybtn.classList.remove("mk-active-catagory"),
+          remedylists.classList.remove("mk-remedy-card-list-active"),
+          dietlists.classList.remove("mk-remedy-card-list-active"),
+          exerciselist.classList.add("mk-remedy-card-list-active");
+
+      }
+    </script>
+  </body>
+</html>

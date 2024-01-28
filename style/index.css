@@ -1,0 +1,189 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+
+}
+/* color #F40057  */
+/* a{
+    text-decoration: none;
+} */
+.mk-remedy-max-wd {
+    max-width: 1100px;
+  }
+  .mk-index-wd{
+    max-width: 1100px;
+
+  }
+/* .mk-web-container{
+    max-width: 1920px;
+} */
+.mk-bg-primary-color{
+background-color: #F40057 !important;
+
+}
+/* ############ NAVIGATION ##############  */
+.mk-navigation{ 
+    padding: 30px 20px;
+    background-color: #F40057 ;
+    
+}
+.mk-logo .logo{
+    font-size: clamp(14px, 3vw, 44px);
+    color: #fff;
+}
+.mk-navigation-icon {
+width: 40px;
+height: 40px;
+margin: 10px;  
+color: #fff;
+}
+.mk-login-modal{
+  border: 2px solid #F40057 !important;
+}
+/* ----- nav responsive ------  */
+@media (max-width: 520px){ 
+    .mk-navigation{ 
+        padding: 20px 10px;  
+    }  
+    .mk-navigation-icon {
+width: 15px;
+height: 15px;
+margin: 5px;  
+}
+}
+/* ///////////////////////////////////// */
+/* ////////         NAV         //////// */
+/* ///////////////////////////////////// */
+
+/* ############ MK CATAGORY NAV ##############  */
+.mk-catagory-nav{ 
+    background-color: #F40057;
+    color: #bdbdbd;
+}
+/* .mk-face{
+    border-bottom: 4px solid #fff;
+} */
+
+.mk-face,
+.mk-skin {
+    padding: 10px;
+}
+@media (max-width: 420px){
+    .mk-face,
+.mk-skin {
+    padding: 5px;
+}
+}
+
+
+/* ############ CATAGORY SECTION  #############  */
+
+/* .mk-catagory-section{  
+} */
+.mk-home-catagory-section{
+    display: none;
+    max-height: 60vh;
+min-height: 700px;
+
+}
+.mk-face,
+.mk-skin{
+    cursor: pointer;
+}
+/* ///////////////////////////////// */
+/* for script class */
+.mk-active-catagory{
+    border-bottom: 4px solid #fff;
+    color: #fff;
+}
+.mk-active-catagory-section{
+    display: flex;
+}
+/* ///////////////////////////////// */
+
+/* FACE CATAGORY  */
+.mk-home-catagory-cards{ 
+    position: relative; 
+} 
+.mk-home-catagory-cards img{
+   height: 100%;
+   position: absolute;
+}
+.mk-home-card-title {
+position: absolute;
+bottom: 0px;
+background-color: #11111198;
+text-decoration: none;
+color: #fff;
+}
+.mk-home-card-title :hover{ 
+background-color: #111111ce;
+}
+.mk-home-card-title   p{
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* SKIN CATAGORY  */
+
+/* ----- CATAGORY SECTION  responsive ------  */
+@media (max-width: 820px){
+    .mk-active-catagory-section{
+        display:block;
+    }
+        .mk-home-catagory-cards{ 
+            min-height: 600px;
+            max-height: 60vh;
+        }
+}
+
+
+/* ############ MK FOOTER ##############  */
+ 
+ 
+#mk-footer {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #1C1D21
+}
+
+.mk-footer-logo {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #FFF;
+}
+
+.mk-footer-logo>a>img {
+    max-height: 80px;
+}
+.mk-footer-follow {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.mk-footer-follow li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 13px;
+}
+
+.mk-footer-follow li a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #F40057;
+  color:#FFF;
+}
+
+.mk-footer-copyright p {
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+  color:#868F9B;
+}
+

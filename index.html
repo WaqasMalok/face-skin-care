@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skin and Face Care</title>
+    <!-- custom style sheet  -->
+    <link rel="stylesheet" href="./style/index.css" />
+
+    <!-- bootstrap style sheet  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- FONTAWESOME  -->
+    <script
+      src="https://kit.fontawesome.com/dc80c8265b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- WEBSITE CONTAINER  -->
+    <div class="mk-web-container m-auto overflow-hidden">
+      <div class="mk-header mk-bg-primary-color">
+        <div
+          class="mk-navigation d-flex align-items-center justify-content-between mk-index-wd m-auto"
+        >
+          <div class="mk-logo">
+            <a class="text-decoration-none" href="#">
+              <h3 class="logo m-0">Skin and Face Care</h3>
+            </a>
+          </div>
+          <div class="mk-icon">
+            <a class="mk-navigation-icon" href="#">
+              <i class="fa-solid fa-globe"></i>
+            </a>
+            <a class="mk-navigation-icon" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+ <!-- LOGIN MODEL  -->
+ <!-- Button trigger modal --> 
+<!-- Modal -->
+<div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content mk-login-modal">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Login </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Login</button>
+        <button type="button" class="btn mk-bg-primary-color text-white">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- CATAGORY NAMES  -->
+      <div class="mk-bg-primary-color">
+      <div class="mk-catagory-nav d-flex mk-index-wd m-auto">
+        <div
+          onclick="facecatagory()"
+          id="face-btn"
+          class="mk-face fw-bold w-100 text-center"
+        >
+          FACE
+        </div>
+        <div
+          onclick="skincatagory()"
+          id="skin-btn"
+          class="mk-skin fw-bold w-100 text-center mk-active-catagory"
+        >
+          SKIN
+        </div>
+      </div></div>
+      <!-- CATAGORY SECTION  -->
+      <div class="mk-catagory-section mk-index-wd m-auto">
+        <div id="face" class="mk-home-catagory-section">
+          <div class="mk-home-catagory-cards w-100">
+            <div class="mk-face-img">
+              <img
+                class="w-100"
+                src="https://images.unsplash.com/photo-1441786485319-5e0f0c092803?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <a href="./catagorylist.html" class="mk-home-card-title w-100">
+              <p class="m-0">FACE WRINKLES</p>
+            </a>
+          </div>
+          <div class="mk-home-catagory-cards w-100">
+            <div class="mk-face-img">
+              <img
+                class="w-100"
+                src="https://images.unsplash.com/photo-1594051843839-c96c81ae011a?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <a href="./remedy.html" class="mk-home-card-title w-100">
+              <p class="m-0">FACE WRINKLES</p>
+            </a>
+          </div>
+        </div>
+        <div
+          id="skin"
+          class="mk-home-catagory-section mk-active-catagory-section"
+        >
+          <div class="mk-home-catagory-cards w-100">
+            <div class="mk-face-img">
+              <img
+                class="w-100"
+                src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?q=80&w=1666&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <a href="./remedy.html" class="mk-home-card-title w-100">
+              <p class="m-0">SKIN WRINKLES</p>
+            </a>
+          </div>
+          <div class="mk-home-catagory-cards w-100">
+            <div class="mk-face-img">
+              <img
+                class="w-100"
+                src="https://images.unsplash.com/photo-1440133197387-5a6020d5ace2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <a href="./remedy.html" class="mk-home-card-title w-100">
+              <p class="m-0">SKIN WRINKLES</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER DESIGN  -->
+      <footer id="mk-footer">
+        <div class="mk-container">
+          <!-- Row -->
+          <div class="row">
+            <div class="col-md-12">
+              <!-- footer logo -->
+              <div class="mk-footer-logo text-center">
+                <h3>Skin and Face Care</h3>
+              </div>
+              <!-- /footer logo -->
+              <!-- footer follow -->
+              <ul class="mk-footer-follow">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+                </li>
+              </ul>
+              <!-- /footer follow -->
+              <!-- footer copyright -->
+              <div class="mk-footer-copyright">
+                <p>
+                  Copyright © 2016-2018. All Rights Reserved.
+                  <a href="#" target="_blank">WAQASMALIK</a>
+                </p>
+              </div>
+              <!-- /footer copyright -->
+            </div>
+          </div>
+          <!-- /Row -->
+        </div>
+        <!-- /Container -->
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custome script  -->
+    <script type="text/javascript">
+      var face = document.querySelector("#face");
+      var skin = document.querySelector("#skin");
+      var facebtn = document.querySelector("#face-btn");
+      var skinbtn = document.querySelector("#skin-btn");
+
+      function facecatagory() {
+        facebtn.classList.add("mk-active-catagory"),
+          face.classList.add("mk-active-catagory-section"),
+          skinbtn.classList.remove("mk-active-catagory"),
+          skin.classList.remove("mk-active-catagory-section");
+      }
+      function skincatagory() {
+        facebtn.classList.remove("mk-active-catagory"),
+          face.classList.remove("mk-active-catagory-section"),
+          skinbtn.classList.add("mk-active-catagory"),
+          skin.classList.add("mk-active-catagory-section");
+      }
+    </script>
+  </body>
+</html>
